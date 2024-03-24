@@ -1,8 +1,8 @@
 {
-  "name": "soda-pop",
-  "version": "0.0.1",
+  "name": "starter-world",
+  "version": "0.0.0",
   "description": "",
-  "repository": "dsfx3d/pop-soda",
+  "repository": "dsfx3d/starter-world",
   "license": "MIT",
   "sideEffects": false,
   "type": "module",
