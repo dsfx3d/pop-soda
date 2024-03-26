@@ -10,7 +10,7 @@ export class ObjectManager {
 
   add(object: IObject) {
     object.drawable && this.app.stage.addChild(object.drawable);
-    World.add(this.engine.world, object.body!);
+    object.body && World.add(this.engine.world, object.body);
     this.addListeners(object);
   }
 
