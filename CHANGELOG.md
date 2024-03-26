@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.2
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.0.1...v0.0.2)
+
+### 🚀 Enhancements
+
+- **object-manager:** Rename render function ([14f639e](https://github.com/dsfx3d/starter-world/commit/14f639e))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.0.1
 
 
