@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.4
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.0.3...v0.0.4)
+
+### 🚀 Enhancements
+
+- **object-manager:** Add body to world ([61e5df5](https://github.com/dsfx3d/starter-world/commit/61e5df5))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.0.3
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.0.2...v0.0.3)
