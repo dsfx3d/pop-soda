@@ -16,7 +16,6 @@ export class ObjectManager {
   }
 
   private addListeners(object: IObject) {
-    object.onUpdate &&
-      this.app.ticker.add(object.onUpdate.bind(object, object));
+    object.render && this.app.ticker.add(object.render.bind(object));
   }
 }
