@@ -9,7 +9,6 @@ export class ObjectManager {
   ) {}
 
   add(object: IObject) {
-    console.log(object.body?.angle);
     object.drawable && this.app.stage.addChild(object.drawable);
     World.add(this.engine.world, object.body!);
     this.addListeners(object);
