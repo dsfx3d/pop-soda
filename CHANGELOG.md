@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.3
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.0.2...v0.0.3)
+
+### 🩹 Fixes
+
+- **object-manager:** Remove console logs ([eba580d](https://github.com/dsfx3d/starter-world/commit/eba580d))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.0.2
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.0.1...v0.0.2)
