@@ -1,3 +1,3 @@
-import {IGame} from "../game/IGame";
+import {Game} from "../game/Game";
 
-export type TGameContainer<T, G extends IGame> = new (game: G) => T;
+export type TGameContainer<T, G extends Game> = new (game: G) => T;

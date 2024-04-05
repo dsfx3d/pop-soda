@@ -1,7 +1,7 @@
-import {IGame} from "../game/IGame";
+import {Game} from "../game/Game";
 import {IScene} from "./IScene";
 
-export abstract class AScene<G extends IGame> implements IScene<G> {
-  constructor(public readonly game: G) {}
+export abstract class AScene implements IScene<Game> {
+  constructor(public readonly game: Game) {}
   abstract start(): Promise<void>;
 }
