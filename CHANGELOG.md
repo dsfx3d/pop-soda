@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.1
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.0.4...v0.1.1)
+
+### 🚀 Enhancements
+
+- Beta release BREAKING CHANGES ([63619c2](https://github.com/dsfx3d/starter-world/commit/63619c2))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.0.4
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.0.3...v0.0.4)
