@@ -1,3 +1,4 @@
+export * from "./game/AGameContainer";
 export * from "./game/Game";
 export * from "./mixin/IFinishMixin";
 export * from "./mixin/IInitMixin";
