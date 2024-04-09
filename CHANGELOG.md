@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.2
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.1...v0.1.2)
+
+### 🚀 Enhancements
+
+- **object:** Drawable is a container and view ([76eeae1](https://github.com/dsfx3d/starter-world/commit/76eeae1))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.1
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.0.4...v0.1.1)
