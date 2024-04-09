@@ -10,4 +10,4 @@ export * from "./scene/AScene";
 export * from "./scene/IScene";
 export * from "./scene/SceneManager";
 export * from "./util/ContainerProvider";
-export * from "./util/TGameContainer";
+export * from "./util/IGameContainerConstructor";

@@ -1,16 +1,14 @@
-import {Game} from "../game/Game";
-import {IScene} from "./IScene";
-import {TGameContainer} from "../util/TGameContainer";
+import {AGameContainer} from "../game/AGameContainer";
+import {AScene} from "./AScene";
+import {IGameContainerConstructor} from "../util/IGameContainerConstructor";
 
-export class SceneManager {
-  private activeScene: IScene<Game> | undefined;
+export class SceneManager extends AGameContainer {
+  private activeScene: AScene | undefined;
 
-  constructor(private readonly game: Game) {}
-
-  async run<S extends IScene<Game>>(
-    Scene: TGameContainer<S, Game>,
+  async run<S extends AScene>(
+    Scene: IGameContainerConstructor<S>,
   ): Promise<void> {
-    await this.activeScene?.finish?.();
+    await this.activeScene?.finish();
     this.activeScene = new Scene(this.game);
     await this.activeScene.start();
   }

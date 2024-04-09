@@ -1,17 +1,15 @@
-import {Game} from "../game/Game";
-import {IObject} from "./IObject";
-import {TGameContainer} from "../util/TGameContainer";
+import {AGameContainer} from "../game/AGameContainer";
+import {AnObject} from "./AnObject";
+import {IGameContainerConstructor} from "../util/IGameContainerConstructor";
 
-export class ObjectPool<O extends IObject> {
-  private readonly pool: O[] = [];
+export class ObjectPool extends AGameContainer {
+  private readonly pool: AnObject[] = [];
 
-  constructor(private readonly game: Game) {}
-
-  acquire(constructor: TGameContainer<O, Game>): O {
-    return this.pool.pop() ?? new constructor(this.game);
+  acquire<O extends AnObject>(constructor: IGameContainerConstructor<O>): O {
+    return (this.pool.pop() ?? new constructor(this.game)) as O;
   }
 
-  release(object: O) {
+  release<O extends AnObject>(object: O) {
     this.pool.push(object);
   }
 }
