@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.6
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.5...v0.1.6)
+
+### 🚀 Enhancements
+
+- **game:** Add events system ([956dd49](https://github.com/dsfx3d/starter-world/commit/956dd49))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.5
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.4...v0.1.5)
