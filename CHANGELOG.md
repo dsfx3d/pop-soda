@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.5
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.4...v0.1.5)
+
+### 🚀 Enhancements
+
+- Export `AGameContainer` ([c2d6785](https://github.com/dsfx3d/starter-world/commit/c2d6785))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.4
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.3...v0.1.4)
