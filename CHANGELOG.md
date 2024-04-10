@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.8
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.7...v0.1.8)
+
+### 🩹 Fixes
+
+- **game:** Provider should exist before creating object manager ([0619a1e](https://github.com/dsfx3d/starter-world/commit/0619a1e))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.7
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.6...v0.1.7)
