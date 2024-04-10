@@ -7,7 +7,13 @@ export class ContainerProvider extends AGameContainer {
   getSingleton<T extends AGameContainer>(
     constructor: IGameContainerConstructor<T>,
   ): T {
-    this.singletons[constructor.name] ??= new constructor(this.game);
+    this.singletons[constructor.name] ??= this.getInstance(constructor);
     return this.singletons[constructor.name] as T;
+  }
+
+  getInstance<T extends AGameContainer>(
+    constructor: IGameContainerConstructor<T>,
+  ): T {
+    return new constructor(this.game);
   }
 }
