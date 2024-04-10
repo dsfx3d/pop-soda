@@ -1,6 +1,20 @@
 # Changelog
 
 
+## v0.1.7
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.6...v0.1.7)
+
+### 🚀 Enhancements
+
+- **scene:** Lifecycle methods can be both  async and sync ([87492a4](https://github.com/dsfx3d/starter-world/commit/87492a4))
+- **util/ContainerProvider:** Expose method to create an instance ([fb30073](https://github.com/dsfx3d/starter-world/commit/fb30073))
+- Add generic pool for game containers ([1d4040e](https://github.com/dsfx3d/starter-world/commit/1d4040e))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.6
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.5...v0.1.6)
