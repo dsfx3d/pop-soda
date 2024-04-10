@@ -1,11 +1,10 @@
 import {AGameContainer} from "../game/AGameContainer";
 import {AnObject} from "./AnObject";
-import {IGameContainerConstructor} from "../util/IGameContainerConstructor";
-import {ObjectPool} from "./ObjectPool";
+import {PoolMap} from "../util/PoolMap";
 import {World} from "matter-js";
 
 export class ObjectManager extends AGameContainer {
-  private pools: Record<string, ObjectPool> = {};
+  readonly pool = this.game.provider.getInstance(PoolMap<AnObject>);
 
   add(object: AnObject) {
     object.drawable && this.game.app.stage.addChild(object.drawable);
@@ -18,16 +17,6 @@ export class ObjectManager extends AGameContainer {
     object.drawable && this.game.app.stage.removeChild(object.drawable);
     object.body && World.remove(this.game.engine.world, object.body);
     this.removeListeners(object);
-  }
-
-  acquire<O extends AnObject>(constructor: IGameContainerConstructor<O>): O {
-    this.pools[constructor.name] ??= new ObjectPool(this.game);
-    return this.pools[constructor.name].acquire(constructor);
-  }
-
-  release<O extends AnObject>(object: O) {
-    this.pools[object.constructor.name] ??= new ObjectPool(this.game);
-    this.pools[object.constructor.name].release(object);
   }
 
   private addListeners(object: AnObject) {
