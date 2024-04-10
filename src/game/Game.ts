@@ -6,10 +6,10 @@ import {SceneManager} from "../scene/SceneManager";
 import {createNanoEvents} from "nanoevents";
 
 export class Game {
-  readonly objects = new ObjectManager(this);
-  readonly provider = new ContainerProvider(this);
-  readonly scenes = new SceneManager(this);
   readonly events = createNanoEvents();
+  readonly provider = new ContainerProvider(this);
+  readonly objects = new ObjectManager(this);
+  readonly scenes = new SceneManager(this);
   private runner: Runner = Runner.create({});
 
   constructor(
