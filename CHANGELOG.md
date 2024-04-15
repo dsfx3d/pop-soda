@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v0.1.10
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.9...v0.1.10)
+
+### 🚀 Enhancements
+
+- **object:** `drawable` can be `Container` or `View` ([d279507](https://github.com/dsfx3d/starter-world/commit/d279507))
+- **object:** `drawable` can be `Container` or `View` ([5539bf3](https://github.com/dsfx3d/starter-world/commit/5539bf3))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.9
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.8...v0.1.9)
