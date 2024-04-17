@@ -3,10 +3,11 @@ import {ContainerProvider} from "../util/ContainerProvider";
 import {Engine, Runner} from "matter-js";
 import {ObjectManager} from "../object/ObjectManager";
 import {SceneManager} from "../scene/SceneManager";
-import {createNanoEvents} from "nanoevents";
+import {TEvents} from "../util/TEvents";
+import {createEvents} from "../util/createEvents";
 
 export class Game {
-  readonly events = createNanoEvents();
+  readonly events: TEvents = createEvents();
   readonly provider = new ContainerProvider(this);
   readonly objects = new ObjectManager(this);
   readonly scenes = new SceneManager(this);
