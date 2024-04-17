@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.12
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.11...v0.1.12)
+
+### 🚀 Enhancements
+
+- **events:** Add method to listen to an even only `once` ([1bbffae](https://github.com/dsfx3d/starter-world/commit/1bbffae))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.11
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.10...v0.1.11)
