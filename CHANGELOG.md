@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.13
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.12...v0.1.13)
+
+### 🚀 Enhancements
+
+- Extend game object from game container ([00077e2](https://github.com/dsfx3d/starter-world/commit/00077e2))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.12
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.11...v0.1.12)
