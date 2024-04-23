@@ -2,6 +2,7 @@ export * from "./game/AGameContainer";
 export * from "./game/Game";
 export * from "./mixin/IFinishMixin";
 export * from "./mixin/IInitMixin";
+export * from "./mixin/IRenderMixin";
 export * from "./mixin/IStartMixin";
 export * from "./object/AnObject";
 export * from "./object/IObject";
