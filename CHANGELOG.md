@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.14
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.13...v0.1.14)
+
+### 🚀 Enhancements
+
+- Add render mixin interface ([54bb3ce](https://github.com/dsfx3d/starter-world/commit/54bb3ce))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.13
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.12...v0.1.13)
