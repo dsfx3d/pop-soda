@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.20
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.19...v0.1.20)
+
+### 🚀 Enhancements
+
+- Add pool in object manager ([bc8d13a](https://github.com/dsfx3d/starter-world/commit/bc8d13a))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.19
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.18...v0.1.19)
