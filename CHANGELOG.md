@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.31
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.30...v0.1.31)
+
+### 🚀 Enhancements
+
+- Remove di from internal use ([fc679a6](https://github.com/dsfx3d/starter-world/commit/fc679a6))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.30
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.29...v0.1.30)
