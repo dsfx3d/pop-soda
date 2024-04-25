@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.25
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.24...v0.1.25)
+
+### 🚀 Enhancements
+
+- **decorator:** Add decorator for object pooling ([232d0cb](https://github.com/dsfx3d/starter-world/commit/232d0cb))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.24
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.23...v0.1.24)
