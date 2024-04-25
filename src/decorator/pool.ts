@@ -9,7 +9,8 @@ import {type Unsubscribe} from "nanoevents";
 export function pool<T extends IGameContainer>(
   constructor: IGameContainerConstructor<T>,
 ) {
-  return function (target: AGameContainer, key: string) {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  return function (target: AGameContainer, key: string, _index: number) {
     let acquisition: TPoolAcquisition<IObject>;
     let unsubscribe: Unsubscribe[] = [];
 
