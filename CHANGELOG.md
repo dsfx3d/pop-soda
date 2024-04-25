@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.26
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.25...v0.1.26)
+
+### 🚀 Enhancements
+
+- **object-manager:** Accept multiple objects in params ([c8f0d0f](https://github.com/dsfx3d/starter-world/commit/c8f0d0f))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.25
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.24...v0.1.25)
