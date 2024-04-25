@@ -2,14 +2,16 @@ import {AGameContainer} from "../game/AGameContainer";
 import {Body} from "matter-js";
 import {Container, View} from "pixi.js";
 import {Game} from "../game/Game";
-import {IObject} from "./IObject";
+import {IInitMixin} from "../mixin/IInitMixin";
 
-export abstract class AnObject extends AGameContainer implements IObject {
-  body?: Body | undefined;
-  drawable?: Container | View | undefined;
+export abstract class AnObject extends AGameContainer implements IInitMixin {
+  body?: Body;
+  drawable?: Container | View;
 
   constructor(readonly game: Game) {
     super(game);
-    this.game.objects.add(this);
+    this.init();
   }
+
+  abstract init(): void | Promise<void>;
 }
