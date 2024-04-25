@@ -15,15 +15,15 @@ export class SceneManager extends AGameContainer {
     await this.exitActiveScene(options);
     const acquisition = this.pool.acquire(Scene);
     if (acquisition.isCreated) {
-      await acquisition.result.init();
+      await acquisition.result.init?.();
     }
     this.runningScene = acquisition.result;
     this.addTicker();
-    await this.runningScene.entry();
+    await this.runningScene.entry?.();
   }
 
   private async exitActiveScene(options: TRunSceneRequest): Promise<void> {
-    await this.runningScene?.exit();
+    await this.runningScene?.exit?.();
     this.removeTicker();
     if (this.runningScene && options.persistCurrentScene) {
       this.pool.release(this.runningScene);
