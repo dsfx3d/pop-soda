@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v0.1.15
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.14...v0.1.15)
+
+### 🚀 Enhancements
+
+- Add lifecycle mixins ([2de23c4](https://github.com/dsfx3d/starter-world/commit/2de23c4))
+- Add lifecycle mixins ([bf2663c](https://github.com/dsfx3d/starter-world/commit/bf2663c))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.14
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.13...v0.1.14)
