@@ -10,6 +10,7 @@ export function createEvents(): TEvents {
         cb(...args);
         unsubscribe();
       });
+      return unsubscribe;
     },
   });
 }

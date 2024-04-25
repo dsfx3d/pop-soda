@@ -1,21 +1,16 @@
 import {AGameContainer} from "../game/AGameContainer";
 import {AScene} from "../scene/AScene";
-import {IGameContainer} from "../util/IGameContainer";
-import {IGameContainerConstructor} from "../util/IGameContainerConstructor";
 import {IObject} from "../object/IObject";
-import {TPoolAcquisition} from "../util/TPoolAcquisition";
 import {type Unsubscribe} from "nanoevents";
 
-export function pool<T extends IGameContainer>(
-  constructor: IGameContainerConstructor<T>,
-) {
+export function objects() {
   return function (target: AGameContainer, key: string) {
-    let acquisition: TPoolAcquisition<IObject>;
+    let objectList: IObject[] = [];
     let unsubscribe: Unsubscribe[] = [];
 
     function onExit(scene: AScene) {
       if (scene === target) {
-        target.game.objects.pool.release(acquisition.result);
+        target.game.objects.remove(...objectList);
       }
     }
 
@@ -28,10 +23,13 @@ export function pool<T extends IGameContainer>(
 
     Object.defineProperty(target, key, {
       get() {
+        return objectList;
+      },
+      set(objects: IObject[]) {
         reset();
-        acquisition = target.game.objects.pool.acquire(constructor);
+        objectList = objects;
         unsubscribe.push(target.game.events.once("SceneExit", onExit));
-        return acquisition.result;
+        target.game.objects.add(...objects);
       },
       enumerable: true,
     });
