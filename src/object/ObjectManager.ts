@@ -3,10 +3,9 @@ import {Container, View} from "pixi.js";
 import {IObject} from "./IObject";
 import {PoolMap} from "../util/PoolMap";
 import {World} from "matter-js";
-import {inject} from "../decorator/inject";
 
 export class ObjectManager extends AGameContainer {
-  @inject(PoolMap<IObject>) readonly pool!: PoolMap<IObject>;
+  readonly pool = this.game.provider.getInstance(PoolMap<IObject>);
 
   async add(...objects: IObject[]): Promise<void> {
     await Promise.all(objects.map(o => this.addOne(o)));
