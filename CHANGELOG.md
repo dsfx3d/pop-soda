@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.1.24
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.23...v0.1.24)
+
+### 🚀 Enhancements
+
+- **di:** Add injection decorator ([4862d22](https://github.com/dsfx3d/starter-world/commit/4862d22))
+
+### 🏡 Chore
+
+- Enable experimental decorators ([05dae93](https://github.com/dsfx3d/starter-world/commit/05dae93))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.23
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.22...v0.1.23)
