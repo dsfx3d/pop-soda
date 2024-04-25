@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v0.1.19
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.18...v0.1.19)
+
+### 🚀 Enhancements
+
+- **object-manager:** Add ability to remove all objects ([bb5ceb1](https://github.com/dsfx3d/starter-world/commit/bb5ceb1))
+- Move object manager to scene ([eed8243](https://github.com/dsfx3d/starter-world/commit/eed8243))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.18
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.17...v0.1.18)
