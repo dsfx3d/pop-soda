@@ -1,3 +1,4 @@
+export * from "./decorator/inject";
 export * from "./game/AGameContainer";
 export * from "./game/Game";
 export * from "./mixin/IEntryMixin";
