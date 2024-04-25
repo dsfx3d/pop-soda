@@ -10,8 +10,7 @@ export class Pool<T extends AGameContainer> extends AGameContainer {
   ): TPoolAcquisition<O> {
     return {
       isCreated: this.pool.length === 0,
-      result: (this.pool.pop() ??
-        this.game.provider.getInstance(constructor)) as O,
+      result: (this.pool.pop() ?? new constructor(this.game)) as O,
     };
   }
 

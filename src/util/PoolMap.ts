@@ -9,14 +9,12 @@ export class PoolMap<T extends AGameContainer> extends AGameContainer {
   acquire<O extends T>(
     constructor: IGameContainerConstructor<O>,
   ): TPoolAcquisition<O> {
-    this.pools[constructor.name] ??= this.game.provider.getInstance(Pool<O>);
+    this.pools[constructor.name] ??= new Pool<O>(this.game);
     return this.pools[constructor.name].acquire(constructor);
   }
 
   release<O extends T>(object: O) {
-    this.pools[object.constructor.name] ??= this.game.provider.getInstance(
-      Pool<O>,
-    );
+    this.pools[object.constructor.name] ??= new Pool<O>(this.game);
     this.pools[object.constructor.name].release(object);
   }
 }

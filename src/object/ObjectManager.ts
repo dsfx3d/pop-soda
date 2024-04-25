@@ -5,7 +5,7 @@ import {PoolMap} from "../util/PoolMap";
 import {World} from "matter-js";
 
 export class ObjectManager extends AGameContainer {
-  readonly pool = this.game.provider.getInstance(PoolMap<IObject>);
+  readonly pool = new PoolMap<IObject>(this.game);
 
   async add(...objects: IObject[]): Promise<void> {
     await Promise.all(objects.map(o => this.addOne(o)));
