@@ -24,11 +24,11 @@ export class ObjectManager extends AGameContainer {
     this.removeListeners(object);
   }
 
-  private addOne(object: IObject) {
+  private async addOne(object: IObject): Promise<void> {
     object.drawable &&
       this.game.app.stage.addChild(object.drawable as View & Container);
     object.body && World.add(this.game.engine.world, object.body);
-    object.entry?.();
+    await object.entry?.();
     this.addListeners(object);
   }
 
