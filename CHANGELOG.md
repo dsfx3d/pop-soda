@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v0.1.28
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.27...v0.1.28)
+
+### 🚀 Enhancements
+
+- **scene:** Make lifecycle methods optional ([36a6e56](https://github.com/dsfx3d/starter-world/commit/36a6e56))
+- **object-manager:** Await entry ([4a7ceba](https://github.com/dsfx3d/starter-world/commit/4a7ceba))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.27
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.26...v0.1.27)
