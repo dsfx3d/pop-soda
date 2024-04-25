@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.18
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.17...v0.1.18)
+
+### 🚀 Enhancements
+
+- Wip ([83dd30a](https://github.com/dsfx3d/starter-world/commit/83dd30a))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.17
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.16...v0.1.17)
