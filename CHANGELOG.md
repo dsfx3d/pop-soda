@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.32
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.31...v0.1.32)
+
+### 🚀 Enhancements
+
+- Convert to parameter decorator ([75d69bd](https://github.com/dsfx3d/starter-world/commit/75d69bd))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.31
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.30...v0.1.31)
