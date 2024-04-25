@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.16
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.15...v0.1.16)
+
+### 🚀 Enhancements
+
+- Make object and scene generic ([05d4e34](https://github.com/dsfx3d/starter-world/commit/05d4e34))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.15
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.14...v0.1.15)
