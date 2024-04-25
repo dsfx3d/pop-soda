@@ -1,9 +1,11 @@
 import {AGameContainer} from "../game/AGameContainer";
 import {Container, View} from "pixi.js";
 import {IObject} from "./IObject";
+import {PoolMap} from "../util/PoolMap";
 import {World} from "matter-js";
 
 export class ObjectManager extends AGameContainer {
+  readonly pool = this.game.provider.getInstance(PoolMap<IObject>);
   private objects: IObject[] = [];
 
   add(object: IObject) {
