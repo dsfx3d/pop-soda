@@ -31,10 +31,10 @@ export class ObjectManager extends AGameContainer {
   }
 
   private addListeners(object: IObject) {
-    object.update && this.game.app.ticker.add(object.update.bind(object));
+    object.update && this.game.app.ticker.add(object.update, object);
   }
 
   private removeListeners(object: IObject) {
-    object.update && this.game.app.ticker.remove(object.update.bind(object));
+    object.update && this.game.app.ticker.remove(object.update, object);
   }
 }
