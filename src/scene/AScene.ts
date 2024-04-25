@@ -3,7 +3,7 @@ import {Game} from "../game/Game";
 import {IInitMixin} from "../mixin/IInitMixin";
 
 export abstract class AScene<G extends Game = Game>
-  extends AGameContainer
+  extends AGameContainer<G>
   implements IInitMixin
 {
   constructor(game: G) {
