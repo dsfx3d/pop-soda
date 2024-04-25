@@ -5,7 +5,7 @@ import {PoolMap} from "../util/PoolMap";
 import {TRunSceneRequest} from "./TRunSceneRequest";
 
 export class SceneManager extends AGameContainer {
-  private readonly pool = this.game.provider.getInstance(PoolMap<IScene>);
+  private readonly pool = new PoolMap<IScene>(this.game);
   private runningScene?: IScene;
 
   async run<S extends IScene>(
@@ -28,6 +28,7 @@ export class SceneManager extends AGameContainer {
     if (this.runningScene && options.persistCurrentScene) {
       this.pool.release(this.runningScene);
     }
+    this.game.events.emit("SceneExit", this.runningScene!);
     this.runningScene = undefined;
   }
 
