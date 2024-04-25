@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.17
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.16...v0.1.17)
+
+### 🚀 Enhancements
+
+- Expose lifecycle mixins ([08f8ba1](https://github.com/dsfx3d/starter-world/commit/08f8ba1))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.16
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.15...v0.1.16)
