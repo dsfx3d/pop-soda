@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.23
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.22...v0.1.23)
+
+### 🚀 Enhancements
+
+- **game:** Add global object manager ([bcb1e15](https://github.com/dsfx3d/starter-world/commit/bcb1e15))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.22
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.21...v0.1.22)
