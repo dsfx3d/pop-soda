@@ -6,7 +6,7 @@ import {IUpdateMixin} from "../mixin/IUpdateMixin";
 
 export interface IScene
   extends IGameContainer,
-    IInitMixin,
-    IEntryMixin,
-    IExitMixin,
-    IUpdateMixin {}
+    Partial<IInitMixin>,
+    Partial<IEntryMixin>,
+    Partial<IExitMixin>,
+    Partial<IUpdateMixin> {}
