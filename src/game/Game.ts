@@ -1,12 +1,14 @@
 import {Application} from "pixi.js";
 import {ContainerProvider} from "../util/ContainerProvider";
 import {Engine, Runner} from "matter-js";
+import {ObjectManager} from "../object/ObjectManager";
 import {SceneManager} from "../scene/SceneManager";
 import {TEvents} from "../util/TEvents";
 import {createEvents} from "../util/createEvents";
 
 export class Game {
   readonly events: TEvents = createEvents();
+  readonly globalObjects = new ObjectManager(this);
   readonly provider = new ContainerProvider(this);
   readonly scenes = new SceneManager(this);
   private runner: Runner = Runner.create({});
