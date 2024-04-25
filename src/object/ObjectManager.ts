@@ -3,20 +3,20 @@ import {Container, View} from "pixi.js";
 import {IObject} from "./IObject";
 import {PoolMap} from "../util/PoolMap";
 import {World} from "matter-js";
+import {inject} from "../decorator/inject";
 
 export class ObjectManager extends AGameContainer {
-  readonly pool = this.game.provider.getInstance(PoolMap<IObject>);
-  private objects: IObject[] = [];
+  @inject(PoolMap<IObject>) readonly pool!: PoolMap<IObject>;
 
-  add(object: IObject) {
-    object.drawable &&
-      this.game.app.stage.addChild(object.drawable as View & Container);
-    object.body && World.add(this.game.engine.world, object.body);
-    object.entry?.();
-    this.addListeners(object);
+  async add(...objects: IObject[]): Promise<void> {
+    await Promise.all(objects.map(o => this.addOne(o)));
   }
 
-  async remove(object: IObject): Promise<void> {
+  async remove(...objects: IObject[]): Promise<void> {
+    await Promise.all(objects.map(o => this.removeOne(o)));
+  }
+
+  private async removeOne(object: IObject): Promise<void> {
     await object.exit?.();
     object.drawable &&
       // eslint-disable-next-line unicorn/prefer-dom-node-remove
@@ -25,9 +25,12 @@ export class ObjectManager extends AGameContainer {
     this.removeListeners(object);
   }
 
-  async flush(): Promise<void> {
-    await Promise.all(this.objects.map(o => this.remove(o)));
-    this.objects = [];
+  private addOne(object: IObject) {
+    object.drawable &&
+      this.game.app.stage.addChild(object.drawable as View & Container);
+    object.body && World.add(this.game.engine.world, object.body);
+    object.entry?.();
+    this.addListeners(object);
   }
 
   private addListeners(object: IObject) {
