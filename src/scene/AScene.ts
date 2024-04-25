@@ -11,5 +11,5 @@ export abstract class AScene<G extends Game = Game>
     this.init();
   }
 
-  abstract init(): void | Promise<void>;
+  init(): void | Promise<void> {}
 }
