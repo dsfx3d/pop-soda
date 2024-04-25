@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.30
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.29...v0.1.30)
+
+### 🚀 Enhancements
+
+- Add decorator for scene objects ([5c54e94](https://github.com/dsfx3d/starter-world/commit/5c54e94))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.29
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.28...v0.1.29)
