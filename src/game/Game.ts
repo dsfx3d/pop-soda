@@ -8,7 +8,7 @@ import {createEvents} from "../util/createEvents";
 
 export class Game {
   readonly events: TEvents = createEvents();
-  readonly globalObjects = new ObjectManager(this);
+  readonly objects = new ObjectManager(this);
   readonly provider = new ContainerProvider(this);
   readonly scenes = new SceneManager(this);
   private runner: Runner = Runner.create({});
