@@ -21,6 +21,12 @@ export abstract class AGameContainer<G extends Game = Game>
     this.registered.push(...objects);
   }
 
+  inject<T extends IGameContainer<G>>(
+    constructor: IGameContainerConstructor<T>,
+  ): T {
+    return this.game.provider.getSingleton(constructor);
+  }
+
   fromPool<T extends IObject>(constructor: IGameContainerConstructor<T>): T {
     const obj = this.game.objects.pool.acquire(constructor).result;
     this.acquired.push(obj);
