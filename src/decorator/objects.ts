@@ -1,10 +1,11 @@
-import {AGameContainer} from "../game/AGameContainer";
 import {AScene} from "../scene/AScene";
+import {Game} from "../game/Game";
+import {IGameContainer} from "../util/IGameContainer";
 import {IObject} from "../object/IObject";
 import {type Unsubscribe} from "nanoevents";
 
-export function objects() {
-  return function (target: AGameContainer, key: string) {
+export function objects<G extends Game, T extends IGameContainer<G>>() {
+  return function (target: T, key: string) {
     let objectList: IObject[] = [];
     let unsubscribe: Unsubscribe[] = [];
 

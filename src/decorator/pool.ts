@@ -1,16 +1,16 @@
-import {AGameContainer} from "../game/AGameContainer";
 import {AScene} from "../scene/AScene";
+import {Game} from "../game/Game";
 import {IGameContainer} from "../util/IGameContainer";
 import {IGameContainerConstructor} from "../util/IGameContainerConstructor";
 import {IObject} from "../object/IObject";
 import {TPoolAcquisition} from "../util/TPoolAcquisition";
 import {type Unsubscribe} from "nanoevents";
 
-export function pool<T extends IGameContainer>(
+export function pool<G extends Game, T extends IGameContainer<G>>(
   constructor: IGameContainerConstructor<T>,
 ) {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  return function (target: AGameContainer, key: string, _index: number) {
+  return function (target: T, key: string, _index: number) {
     let acquisition: TPoolAcquisition<IObject>;
     let unsubscribe: Unsubscribe[] = [];
 
