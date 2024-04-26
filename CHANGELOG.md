@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.35
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.34...v0.1.35)
+
+### 🚀 Enhancements
+
+- Add injection helper ([d3a12fb](https://github.com/dsfx3d/starter-world/commit/d3a12fb))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.34
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.33...v0.1.34)
