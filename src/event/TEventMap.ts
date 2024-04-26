@@ -1,5 +1,6 @@
-import {AScene} from "../scene/AScene";
+import {EEvent} from "./EEvent";
+import {IGameContainer} from "../util/IGameContainer";
 
 export type TEventMap = {
-  SceneExit(scene: AScene): void;
+  [EEvent.Exit](container: IGameContainer): void;
 };

@@ -1,4 +1,5 @@
 import {AGameContainer} from "../game/AGameContainer";
+import {EEvent} from "../event/EEvent";
 import {IGameContainerConstructor} from "../util/IGameContainerConstructor";
 import {IScene} from "./IScene";
 import {PoolMap} from "../util/PoolMap";
@@ -28,7 +29,7 @@ export class SceneManager extends AGameContainer {
     if (this.runningScene && options.persistCurrentScene) {
       this.pool.release(this.runningScene);
     }
-    this.game.events.emit("SceneExit", this.runningScene!);
+    this.game.events.emit(EEvent.Exit, this.runningScene!);
     this.runningScene = undefined;
   }
 
