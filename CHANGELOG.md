@@ -1,6 +1,20 @@
 # Changelog
 
 
+## v0.1.34
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.33...v0.1.34)
+
+### 🚀 Enhancements
+
+- 🔥  remove decorators ([0c38930](https://github.com/dsfx3d/starter-world/commit/0c38930))
+- Use same exit event for every game container ([0febf0b](https://github.com/dsfx3d/starter-world/commit/0febf0b))
+- Add helper methods for pooling and object registration ([75614ab](https://github.com/dsfx3d/starter-world/commit/75614ab))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.33
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.32...v0.1.33)
