@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v0.1.33
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.32...v0.1.33)
+
+### 🚀 Enhancements
+
+- Streamline generics in decorators ([ced148d](https://github.com/dsfx3d/starter-world/commit/ced148d))
+- Streamline generics in decorators ([0f823bf](https://github.com/dsfx3d/starter-world/commit/0f823bf))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.32
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.31...v0.1.32)
