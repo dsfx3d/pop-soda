@@ -1,6 +1,5 @@
-import {AGameContainer} from "../game/AGameContainer";
-import {Game} from "../game/Game";
+import {IGameContainer} from "./IGameContainer";
 
-export interface IGameContainerConstructor<T extends AGameContainer> {
-  new (game: Game): T;
+export interface IGameContainerConstructor<T extends IGameContainer> {
+  new (game: T["game"]): T;
 }

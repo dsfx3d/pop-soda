@@ -1,8 +1,9 @@
 import {AGameContainer} from "../game/AGameContainer";
+import {IGameContainer} from "./IGameContainer";
 import {IGameContainerConstructor} from "./IGameContainerConstructor";
 import {TPoolAcquisition} from "./TPoolAcquisition";
 
-export class Pool<T extends AGameContainer> extends AGameContainer {
+export class Pool<T extends IGameContainer> extends AGameContainer {
   private readonly pool: T[] = [];
 
   acquire<O extends T>(
