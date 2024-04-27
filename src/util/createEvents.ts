@@ -2,14 +2,14 @@ import {TEventMap} from "../event/TEventMap";
 import {TEvents} from "./TEvents";
 import {createNanoEvents} from "nanoevents";
 
-export function createEvents(): TEvents {
-  const events = createNanoEvents<TEventMap>();
+export function createEvents<E extends TEventMap = TEventMap>(): TEvents<E> {
+  const events = createNanoEvents<E>();
   return Object.assign(events, {
-    once<K extends keyof TEventMap>(event: K, cb: TEventMap[K]) {
-      const unsubscribe = events.on(event, (...args) => {
+    once<K extends keyof E>(event: K, cb: E[K]) {
+      const unsubscribe = events.on(event, ((...args: any) => {
         cb(...args);
         unsubscribe();
-      });
+      }) as E[K]);
       return unsubscribe;
     },
   });

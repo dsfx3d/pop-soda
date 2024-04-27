@@ -1,6 +1,6 @@
 import {TEventMap} from "../event/TEventMap";
-import type {Emitter, EventsMap, Unsubscribe} from "nanoevents";
+import type {Emitter, Unsubscribe} from "nanoevents";
 
-export type TEvents = Emitter<TEventMap> & {
-  once<K extends keyof TEventMap>(event: K, cb: EventsMap[K]): Unsubscribe;
+export type TEvents<E extends TEventMap = TEventMap> = Emitter<E> & {
+  once<K extends keyof E>(event: K, cb: E[K]): Unsubscribe;
 };
