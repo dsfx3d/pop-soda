@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.36
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.35...v0.1.36)
+
+### 🚀 Enhancements
+
+- Allow custom game events ([59a9c30](https://github.com/dsfx3d/starter-world/commit/59a9c30))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.35
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.34...v0.1.35)
