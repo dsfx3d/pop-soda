@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.38
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.37...v0.1.38)
+
+### 🚀 Enhancements
+
+- Add resize event ([298e6e7](https://github.com/dsfx3d/starter-world/commit/298e6e7))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.37
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.36...v0.1.37)
