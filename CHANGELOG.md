@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.37
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.36...v0.1.37)
+
+### 🚀 Enhancements
+
+- **object:** Wait for exit listener before removing ([ffe7471](https://github.com/dsfx3d/starter-world/commit/ffe7471))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.36
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.35...v0.1.36)
