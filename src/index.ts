@@ -9,6 +9,7 @@ export * from "./mixin/IExitMixin";
 export * from "./mixin/IFinishMixin";
 export * from "./mixin/IInitMixin";
 export * from "./mixin/IRenderMixin";
+export * from "./mixin/IResizeMixin";
 export * from "./mixin/IStartMixin";
 export * from "./mixin/IUpdateMixin";
 export * from "./object/AnObject";

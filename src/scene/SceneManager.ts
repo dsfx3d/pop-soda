@@ -15,11 +15,11 @@ export class SceneManager extends AGameContainer {
   ): Promise<void> {
     await this.exitActiveScene(options);
     const acquisition = this.pool.acquire(Scene);
+    this.runningScene = acquisition.result;
+    this.addTicker(this.runningScene);
     if (acquisition.isCreated) {
       await acquisition.result.init?.();
     }
-    this.runningScene = acquisition.result;
-    this.addTicker();
     await this.runningScene.entry?.();
   }
 
@@ -33,9 +33,8 @@ export class SceneManager extends AGameContainer {
     this.runningScene = undefined;
   }
 
-  private addTicker() {
-    this.runningScene?.update &&
-      this.game.app.ticker.remove(this.runningScene.update, this.runningScene);
+  private addTicker(scene: IScene) {
+    scene?.update && this.game.app.ticker.remove(scene.update, scene);
   }
 
   private removeTicker() {

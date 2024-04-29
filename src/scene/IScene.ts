@@ -2,6 +2,7 @@ import {IEntryMixin} from "../mixin/IEntryMixin";
 import {IExitMixin} from "../mixin/IExitMixin";
 import {IGameContainer} from "../util/IGameContainer";
 import {IInitMixin} from "../mixin/IInitMixin";
+import {IResizeMixin} from "../mixin/IResizeMixin";
 import {IUpdateMixin} from "../mixin/IUpdateMixin";
 
 export interface IScene
@@ -9,4 +10,5 @@ export interface IScene
     Partial<IInitMixin>,
     Partial<IEntryMixin>,
     Partial<IExitMixin>,
-    Partial<IUpdateMixin> {}
+    Partial<IUpdateMixin>,
+    Partial<IResizeMixin> {}

@@ -1,5 +1,6 @@
 import {Application} from "pixi.js";
 import {ContainerProvider} from "../util/ContainerProvider";
+import {EEvent} from "../event/EEvent";
 import {Engine, Runner} from "matter-js";
 import {ObjectManager} from "../object/ObjectManager";
 import {SceneManager} from "../scene/SceneManager";
@@ -17,7 +18,11 @@ export class Game<E extends TEventMap = TEventMap> {
   constructor(
     public readonly app: Application,
     public readonly engine: Engine,
-  ) {}
+  ) {
+    app.canvas.addEventListener("resize", (event: UIEvent) => {
+      this.events.emit(EEvent.Resize, event);
+    });
+  }
 
   start() {
     Runner.run(this.runner, this.engine);
