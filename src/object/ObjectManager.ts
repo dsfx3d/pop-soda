@@ -17,11 +17,11 @@ export class ObjectManager extends AGameContainer {
   }
 
   private async removeOne(object: IObject): Promise<void> {
+    await object.exit?.();
     object.drawable &&
       // eslint-disable-next-line unicorn/prefer-dom-node-remove
       this.game.app.stage.removeChild(object.drawable as View & Container);
     object.body && World.remove(this.game.engine.world, object.body);
-    await object.exit?.();
     this.removeListeners(object);
     this.game.events.emit(EEvent.Exit, object);
   }
