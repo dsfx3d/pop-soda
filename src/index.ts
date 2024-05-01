@@ -13,7 +13,6 @@ export * from "./mixin/IRenderMixin";
 export * from "./mixin/IResizeMixin";
 export * from "./mixin/IStartMixin";
 export * from "./mixin/IUpdateMixin";
-export * from "./object/AnObject";
 export * from "./object/IObject";
 export * from "./object/ObjectManager";
 export * from "./scene/AScene";
