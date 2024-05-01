@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.39
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.38...v0.1.39)
+
+### 🚀 Enhancements
+
+- Expose EEvent ([a9b5cae](https://github.com/dsfx3d/starter-world/commit/a9b5cae))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.38
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.37...v0.1.38)
