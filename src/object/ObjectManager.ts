@@ -30,8 +30,9 @@ export class ObjectManager extends AGameContainer {
     object.drawable &&
       this.game.app.stage.addChild(object.drawable as View & Container);
     object.body && World.add(this.game.engine.world, object.body);
-    await object.entry?.();
     this.addListeners(object);
+    this.game.events.emit(EEvent.Entry, object);
+    await object.entry?.();
   }
 
   private addListeners(object: IObject) {
