@@ -1,6 +1,20 @@
 # Changelog
 
 
+## v0.1.42
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.41...v0.1.42)
+
+### 🚀 Enhancements
+
+- Emit event on object entry ([925959d](https://github.com/dsfx3d/starter-world/commit/925959d))
+- Emit event on object entry ([751f8c1](https://github.com/dsfx3d/starter-world/commit/751f8c1))
+- Emit event on object entry ([d6e3a2a](https://github.com/dsfx3d/starter-world/commit/d6e3a2a))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.41
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.40...v0.1.41)
