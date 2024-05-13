@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.43
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.42...v0.1.43)
+
+### 🚀 Enhancements
+
+- **object:** Wip children ([9b07c70](https://github.com/dsfx3d/starter-world/commit/9b07c70))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.42
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.41...v0.1.42)
