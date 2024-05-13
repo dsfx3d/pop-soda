@@ -12,4 +12,5 @@ export interface IObject
     Partial<IUpdateMixin> {
   drawable?: Container | View;
   body?: Body;
+  children?: IObject[];
 }

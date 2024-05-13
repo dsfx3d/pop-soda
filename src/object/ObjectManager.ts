@@ -16,7 +16,9 @@ export class ObjectManager extends AGameContainer {
     await Promise.all(objects.map(o => this.removeOne(o)));
   }
 
+  // eslint-disable-next-line complexity
   private async removeOne(object: IObject): Promise<void> {
+    await this.remove(...(object.children ?? []));
     await object.exit?.();
     object.drawable &&
       // eslint-disable-next-line unicorn/prefer-dom-node-remove
@@ -26,6 +28,7 @@ export class ObjectManager extends AGameContainer {
     this.game.events.emit(EEvent.Exit, object);
   }
 
+  // eslint-disable-next-line complexity
   private async addOne(object: IObject): Promise<void> {
     object.drawable &&
       this.game.app.stage.addChild(object.drawable as View & Container);
@@ -33,6 +36,7 @@ export class ObjectManager extends AGameContainer {
     this.addListeners(object);
     this.game.events.emit(EEvent.Entry, object);
     await object.entry?.();
+    await this.add(...(object.children ?? []));
   }
 
   private addListeners(object: IObject) {
