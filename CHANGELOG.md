@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.44
+
+[compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.43...v0.1.44)
+
+### 🚀 Enhancements
+
+- Revert "feat(object): wip children" ([c80d06d](https://github.com/dsfx3d/starter-world/commit/c80d06d))
+
+### ❤️ Contributors
+
+- Yashodhan Singh Rathore <dsfx3d@gmail.com>
+
 ## v0.1.43
 
 [compare changes](https://github.com/dsfx3d/starter-world/compare/v0.1.42...v0.1.43)
